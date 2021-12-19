@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "hyperswarm": "^3.0.1",
+    "node-cubehash": "^1.0.4",
+    "readline-sync": "^1.4.10"
+  }
+}
