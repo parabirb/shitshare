@@ -20,9 +20,9 @@ async function main() {
         fs.mkdirSync(path.join(__dirname, "files"));
     }
     // check whether user wants to upload or download
-    let upload = readlineSync.keyInSelect(["Download", "Upload"], "Which service?") === 1;
+    let upload = readlineSync.keyInSelect(["Download", "Upload"], "Which service?");
     // if upload
-    if (upload) {
+    if (upload === 1) {
         // let user pick file
         let filename = readlineSync.question("What is the file name? ");
         // check if file exists
@@ -62,7 +62,7 @@ async function main() {
         const discovery = swarm.join(sharingTopic, {server: false, client: true});
     }
     // if download
-    else {
+    else if (upload === 0) {
         // let user pick file
         let filename = readlineSync.question("What is the file name? ");
         // create two swarms (one for record request, one for file retrieval)

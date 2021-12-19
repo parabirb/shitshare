@@ -141,15 +141,12 @@ async function main() {
         });
         // on end
         socket.on("end", () => {
+            // close the socket
+            socket.destroy();
             // remove socket from list
             sockets.splice(sockets.indexOf(socket), 1);
         });
     });
 }
 
-try {
-    main();
-}
-catch (e) {
-    console.error(e);
-}
+main();
