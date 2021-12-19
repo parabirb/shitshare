@@ -3,5 +3,23 @@
     "hyperswarm": "^3.0.1",
     "node-cubehash": "^1.0.4",
     "readline-sync": "^1.4.10"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "shitshare",
+  "description": "shitshare is a shitty decentralized file sharing/hosting network based on the hyperswarm networking stack.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parabirb/shitshare.git"
+  },
+  "author": "parabirb",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "https://github.com/parabirb/shitshare/issues"
+  },
+  "homepage": "https://github.com/parabirb/shitshare#readme"
 }
