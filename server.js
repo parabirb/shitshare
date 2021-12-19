@@ -144,4 +144,9 @@ async function main() {
     });
 }
 
-main();
+try {
+    main();
+}
+catch (e) {
+    console.error(e);
+}
