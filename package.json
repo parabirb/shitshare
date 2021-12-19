@@ -5,7 +5,7 @@
     "readline-sync": "^1.4.10"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node index.js"
   },
   "name": "shitshare",
   "description": "shitshare is a shitty decentralized file sharing/hosting network based on the hyperswarm networking stack.",

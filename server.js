@@ -17,6 +17,9 @@ let hashtable = require("./hashtable.json");
 let sockets = [];
 
 async function main() {
+    // log
+    console.log("Starting server...");
+
     // create files if it doesn't exist
     if (!fs.existsSync(path.join(__dirname, "files"))) {
         fs.mkdirSync(path.join(__dirname, "files"));
